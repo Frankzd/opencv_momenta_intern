@@ -16,7 +16,7 @@ int main(int argc, char** argv )
         return -1;
     }
     Mat dstImage;
-    GaussianBlur(srcImage,dstImage,Size(5,5),0,0);
+    GaussianBlur(image,dstImage,Size(5,5),0,0);
     namedWindow("Display Image", WINDOW_AUTOSIZE );
     namedWindow("Gaussian filter", WINDOW_AUTOSIZE);
     imshow("Display Image", image);
